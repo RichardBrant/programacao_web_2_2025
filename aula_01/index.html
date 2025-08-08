@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 01</title>
 </head>
 <body>
+    <main>
+        <form action="index.php" method="post">
+            <input type="text" name="nome" placeholder="Digite seu nome" class="form-control">
+            <input type="text" name="email" placeholder="Digite seu email" class="form-control">
+            <input type="text" name="telefone" placeholder="Digite seu telefone" class="form-control">
+            <fieldset class="radio-box">
+                <legend>Escolha o tipo de pessoa:</legend>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="tipoPessoa" value="fisica">
+                        Pessoa Física
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="tipoPessoa" value="juridica">
+                        Pessoa Jurídica
+                    </label>
+                </div>
+            </fieldset>
+            <input type="text" name="endereco" placeholder="Digite seu endereço" class="form-control">
+            <select name="UF" id="UF" class="form-control">
+                <option value="AC">AC - Acre</option>
+                <option value="AL">AL - Alagoas</option>
+                <option value="AP">AP - Amapá</option>
+                <option value="AM">AM - Amazonas</option>
+                <option value="BA">BA - Bahia</option>
+                <option value="CE">CE - Ceará</option>
+                <option value="DF">DF - Distrito Federal</option>
+                <option value="ES">ES - Espírito Santo</option>
+                <option value="GO">GO - Goiás</option>
+                <option value="MA">MA - Maranhão</option>
+                <option value="MT">MT - Mato Grosso</option>
+                <option value="MS">MS - Mato Grosso do Sul</option>
+                <option value="MG">MG - Minas Gerais</option>
+                <option value="PA">PA - Pará</option>
+                <option value="PB">PB - Paraíba</option>
+                <option value="PR">PR - Paraná</option>
+                <option value="PE">PE - Pernambuco</option>
+                <option value="PI">PI - Piauí</option>
+                <option value="RJ">RJ - Rio de Janeiro</option>
+                <option value="RN">RN - Rio Grande do Norte</option>
+                <option value="RS">RS - Rio Grande do Sul</option>
+                <option value="RO">RO - Rondônia</option>
+                <option value="RR">RR - Roraima</option>
+                <option value="SC">SC - Santa Catarina</option>
+                <option value="SP">SP - São Paulo</option>
+                <option value="SE">SE - Sergipe</option>
+                <option value="TO">TO - Tocantins</option>
+            </select>
+            <input type="submit" value="Enviar" class="btn btn-primary">
+        </form>
+    </main>
     
 </body>
 </html>
