@@ -8,6 +8,7 @@ Neste repositório, serão adicionados todos os arquivos das atividades realizad
 ## Índice
 
 - [Aula 1](#aula1)
+      Falamos sobre conceitos relacionados ao desenvolvimento Web e GitHub
 - [Aula 2](#aula2)
 
 ## Instalação
