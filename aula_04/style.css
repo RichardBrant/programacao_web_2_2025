@@ -1,0 +1,99 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    border: 4px transparent solid;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    gap: 10px;
+}
+
+.form input{
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: #45a049;
+}
+
+.form h2{
+    text-align: center;
+}
+
+.form label{
+    font-weight: bold;
+}
+
+.form a{
+    text-align: center;
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.form a:hover{
+    text-decoration: underline;
+}
+
+.fieldset{
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+}
+.fieldset:hover{
+    border: 2px solid #4CAF50;
+}
+.fieldset legend{
+    font-weight: bold;
+    padding: 0 10px;
+}
+.fieldset div{
+    margin-bottom: 15px;
+}
+.fieldset div label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.fieldset div input{
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+.fieldset div button{
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fieldset div button:hover{
+    background-color: #45a049;
+}
+.fieldset div a{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #4CAF50;
+    text-decoration: none;
+}
+.fieldset div a:hover{
+    text-decoration: underline;
+}
