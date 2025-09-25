@@ -1,0 +1,1 @@
+Nessa aula aprendemos mais sobre a sintaxe do PHP e tipos de variáveis e comandos
