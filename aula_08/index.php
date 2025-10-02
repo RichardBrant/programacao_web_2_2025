@@ -67,4 +67,93 @@ if($iSalario1 > $iSalario2){
     } else {
         echo "Os valores são iguais";
 }
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+echo 'Prática 4';
+echo '<br>';
+echo '<br>';
+
+$i = 0;
+$iSalario1 = 0;
+
+echo 'Antes do loop a variável é igual à ' . $iSalario1;
+
+echo '<br>';
+for($i=0; $i <= 100; $i++){
+    if ($i==50){
+        break;
+    } else {
+        $iSalario1++;
+    }
+};
+
+if($iSalario1 > $iSalario2){
+    echo $iSalario1 . '<br>';
+} else {
+    echo $iSalario2 . '<br>';
+}
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+echo 'Prática 5';
+echo '<br>';
+echo '<br>';
+
+/*Criar um programa PHP para:
+Declarar um ARRAY que contenha os nomes das disciplinas
+que vocês estão matriculados de segunda a sexta-feira.
+Criar outro ARRAY que contenha os nomes dos professores
+dessas disciplinas.
+Fazer um LOOP for, que faça 5 iterações, e escreva o seguinte:
+“Disciplina DDD, professor PPP.”*/
+
+$aDisciplinas = array ('Estrutura de Dados II', 'Engenharia de Software II', 'Administração e Sistemas de Informação', 'Programação Web I', 'Arquitetura de Computadores II');
+$aProfessores = array ('Bastos', 'Jullian', 'Marciel', 'Cleber', 'Ademar');
+
+for ($i=0;$i<count($aDisciplinas);$i++) {
+    echo 'Disciplina: ' . $aDisciplinas[$i] . ', Professor: ' . $aProfessores[$i] . '<br>';
+};
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+echo 'Prática 6';
+echo '<br>';
+echo '<br>';
+
+$aBoletim = array(
+    array("Disciplina"=>"Matemática","Faltas"=>5, "Média"=>8.5),
+    array("Disciplina"=>"Português","Faltas"=>2, "Média"=>9),
+    array("Disciplina"=>"Geografia","Faltas"=>10, "Média"=>6),
+    array("Disciplina"=>"Educação","Faltas"=>2, "Média"=>8)
+);
+echo '<table border="1" cellpadding="5" cellspacing="0">';
+echo '<tr>
+        <th>Disciplina</th>
+        <th>Faltas</th>
+        <th>Média</th>
+      </tr>';
+
+foreach($aBoletim as $b){
+    echo '<tr>';
+    echo '<td>' . $b["Disciplina"] . '</td>';
+    echo '<td>' . $b["Faltas"] . '</td>';
+    echo '<td>' . $b["Média"] . '</td>';
+    echo '</tr>';
+}
+
+echo '</table>';
+
+
+
+
+
+
+
 ?>
